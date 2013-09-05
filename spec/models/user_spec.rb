@@ -51,7 +51,7 @@ describe "when email is not present" do
 end
 
 describe "when name is too long" do
-	before { @user.name = "a" * 51 }
+	before { @user.name = "a" * 53 }
 	it { should_not be_valid }
 end
 
